@@ -1,0 +1,125 @@
+body {
+    height: 2000px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.card_img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.bor {
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+}
+
+a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.slide {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: whitesmoke;
+    z-index: 300;
+}
+
+.card-header {
+    font-family: 'Griffy', serif;
+    font-size: 300%;
+    color: whitesmoke;
+}
+
+.card-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.footer {
+    background-color: #232323;
+    filter: brightness(50%);
+    border-top: 2px solid lightgray;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.main_cont {
+    position: absolute;
+    margin-top: 50%;
+    padding: 0 10%;
+    width: 100%;
+    height: 100%;
+
+}
+
+audio {
+    display: none;
+}
+
+.song_title {
+    position: relative;
+    margin: -7% 20%;
+}
+
+.audio {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 370px;
+    height: 50px;
+    z-index: 300;
+    background-color: #232323;
+    color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 200px;
+}
+
+.bg_image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    position: fixed;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1200%;
+    font-weight: 800;
+    color: white;
+    font-family: 'Griffy', serif;
+}
+
+.title:hover {
+    animation: flash infinite;
+    animation-duration: 1s;
+    transition: step-end;
+}
+
+@keyframes flash {
+    0% {color: whitesmoke;};
+    25% {color: orange;};
+    50% {color: orangered;};
+    75% {color: red;};
+    100% {color: yellow;};
+}
